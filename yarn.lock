@@ -3445,6 +3445,16 @@ expo-asset@~8.10.1:
     path-browserify "^1.0.0"
     url-parse "^1.5.9"
 
+expo-av@~13.4.1:
+  version "13.4.1"
+  resolved "https://registry.yarnpkg.com/expo-av/-/expo-av-13.4.1.tgz#83029b3202e64bf060f0a7a24591d93bf7ab728c"
+  integrity sha512-0K8QEFzZeNGrppzYUs8wOtjOyPPkxzlVYbEHM6WzIQOG1uYYNOJkJB3aQHVFXHmz+AzoHwMrUjcschofwaMNeg==
+
+expo-clipboard@~4.3.0:
+  version "4.3.0"
+  resolved "https://registry.yarnpkg.com/expo-clipboard/-/expo-clipboard-4.3.0.tgz#19321dabeab3514c6ab6e7e2e39ac51bab47acc6"
+  integrity sha512-FsPv7FFdVCPGT1P9mnOhB7o6wPMI05Bpuchj58ACGEx8mYfA90CLL/sdQFSS7VmQOxdgUh+De3GDJgHq3JvckA==
+
 expo-constants@~14.4.2:
   version "14.4.2"
   resolved "https://registry.yarnpkg.com/expo-constants/-/expo-constants-14.4.2.tgz#cac5e8b524069545739b8d8595ce96cc5be6578c"
@@ -3452,6 +3462,11 @@ expo-constants@~14.4.2:
   dependencies:
     "@expo/config" "~8.1.0"
     uuid "^3.3.2"
+
+expo-document-picker@~11.5.3:
+  version "11.5.3"
+  resolved "https://registry.yarnpkg.com/expo-document-picker/-/expo-document-picker-11.5.3.tgz#90f23412332ea6ec7ee42fcaaff7ede175114b8e"
+  integrity sha512-nneIdDIKGtU6DQfcF5YJPQdIF2CYug5LapOkktE/0Lc7nXs1O+ejQ8zHLzgbdm2VFymL8d6I6x86sNt8VheBXw==
 
 expo-file-system@~15.4.0, expo-file-system@~15.4.2:
   version "15.4.2"
@@ -3466,6 +3481,11 @@ expo-font@~11.4.0:
   integrity sha512-nkmezCFD7gR/I6R+e3/ry18uEfF8uYrr6h+PdBJu+3dawoLOpo+wFb/RG9bHUekU1/cPanR58LR7G5MEMKHR2w==
   dependencies:
     fontfaceobserver "^2.1.0"
+
+expo-haptics@~12.4.0:
+  version "12.4.0"
+  resolved "https://registry.yarnpkg.com/expo-haptics/-/expo-haptics-12.4.0.tgz#99ad9d6a8eafb219aee022ec1412a998e1c90d71"
+  integrity sha512-eELhZOO64oJa6AtEUxosatjSENE/tQgF2rVJxDsvRdx8Vgd3uFC+FRoM3nbMVJkxDgAaP3EKOPT1zVM41sNurw==
 
 expo-head@0.0.11:
   version "0.0.11"
@@ -3551,6 +3571,11 @@ expo-router@2.0.0:
     react-helmet-async "^1.3.0"
     schema-utils "^4.0.1"
     url "^0.11.0"
+
+expo-sharing@~11.5.0:
+  version "11.5.0"
+  resolved "https://registry.yarnpkg.com/expo-sharing/-/expo-sharing-11.5.0.tgz#a8cad65874d882b7f75b12856b4ef55ea9b60a2d"
+  integrity sha512-uerM5YH1FKDZXfkP9ORebvlMVOPP/AfoYgYBez6a8G9fztNYHnRCA6mgK+3aQmpnb3ltmjnAZC39kH18bTNcVw==
 
 expo-splash-screen@~0.20.2:
   version "0.20.4"

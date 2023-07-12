@@ -1,25 +1,23 @@
-//@ts-nocheck
-import React from 'react';
-import {Text, View, StyleSheet} from 'react-native';
-import {useRouter} from "expo-router";
+import { useRouter } from 'expo-router';
+import { ChannelList } from 'stream-chat-expo';
+// import { useAuth } from '../../src/context/auth';
 
 const ChatScreen = () => {
   const router = useRouter();
+  // const { user } = useAuth();
+
+  // const isPrivate = {
+  //   type: 'messaging',
+  //   members: { $in: [user.id.toString()] },
+  // };
+  const isPublic = { type: 'livestream' };
+
   return (
-    <View>
-      <Text>
-        byrookas 🚀
-      </Text>
-    </View>
+    <ChannelList
+      // filters={{ $or: [isPrivate, isPublic] }}
+      onSelect={(channel) => router.push(`/chat/channel/${channel.id}`)}
+    />
   );
 };
 
 export default ChatScreen;
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    alignItems: "center",
-    padding: 24,
-  }
-});

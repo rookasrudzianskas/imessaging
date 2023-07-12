@@ -3,6 +3,7 @@ import React, {useEffect} from 'react';
 import {Text, View, StyleSheet} from 'react-native';
 import {Stack} from "expo-router";
 import { StreamChat } from 'stream-chat';
+import {Chat, OverlayProvider} from "stream-chat-expo";
 
 const API_KEY = 'ktv3jrkywj6j';
 const client = StreamChat.getInstance(API_KEY);
@@ -34,17 +35,21 @@ const ChatLayout = () => {
   }, []);
 
   return (
-    <Stack>
-      <Stack.Screen
-        name={'index'}
-        options={{
-          title: 'Messages',
-          headerStyle: {
-            backgroundColor: '#fff',
-          },
-        }}
-      />
-    </Stack>
+    <OverlayProvider>
+      <Chat client={client}>
+        <Stack>
+          <Stack.Screen
+            name={'index'}
+            options={{
+              title: 'Messages',
+              headerStyle: {
+                backgroundColor: '#fff',
+              },
+            }}
+          />
+        </Stack>
+      </Chat>
+    </OverlayProvider>
   );
 };
 
