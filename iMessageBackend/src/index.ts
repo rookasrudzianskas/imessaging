@@ -1,5 +1,9 @@
 import express from 'express';
 import { PrismaClient } from '@prisma/client';
+import {StreamChat} from "stream-chat";
+
+const { STREAM_API_KEY = '', STREAM_API_SECRET } = process.env;
+const client = StreamChat.getInstance(STREAM_API_KEY, STREAM_API_SECRET);
 
 const prisma = new PrismaClient();
 
@@ -25,6 +29,7 @@ app.post('/login', async (req, res) => {
 
   return res.json({
     ...user,
+    streamToken: client.createToken(user.id.toString()),
   });
 });
 
