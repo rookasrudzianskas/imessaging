@@ -1,6 +1,6 @@
 //@ts-nocheck
 import React, {useEffect, useState} from 'react';
-import {Text, View, StyleSheet, FlatList} from 'react-native';
+import {FlatList} from 'react-native';
 import {getUsers} from "../../src/services/userService";
 import {User} from "../../src/context/auth";
 import UserListItem from "../../src/components/UserListItem";

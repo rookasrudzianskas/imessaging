@@ -1,4 +1,4 @@
-import { View, Text, Pressable } from 'react-native';
+import {View, Text, Pressable, TouchableOpacity, StyleSheet} from 'react-native';
 import { User, useAuth } from '../context/auth';
 import { useChatContext } from 'stream-chat-expo';
 import { useRouter } from 'expo-router';
@@ -18,19 +18,28 @@ const UserListItem = ({ user }: { user: User }) => {
   };
 
   return (
-    <Pressable
+    <TouchableOpacity
+      activeOpacity={0.7}
       onPress={startChannel}
-      style={{
-        backgroundColor: 'white',
-        margin: 5,
-        marginVertical: 3,
-        padding: 10,
-        borderRadius: 5,
-      }}
+      style={styles.container}
     >
-      <Text>{user.name}</Text>
-    </Pressable>
+      <Text style={styles.text}>{user.name}</Text>
+    </TouchableOpacity>
   );
 };
 
 export default UserListItem;
+
+export const styles = StyleSheet.create({
+  container: {
+    marginTop: 10,
+    padding: 14,
+    backgroundColor: 'white',
+    margin: 5,
+    marginVertical: 3,
+    borderRadius: 5,
+  },
+  text: {
+    fontSize: 18,
+  }
+})

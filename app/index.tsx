@@ -7,15 +7,6 @@ export default function Page() {
 
   return (
     <Redirect href={'/chat'} />
-    // <View style={styles.container}>
-    //   <View style={styles.main}>
-    //     <Text style={styles.title}>Hello World</Text>
-    //     <Text style={styles.subtitle}>This is the first page of your app.</Text>
-    //     <TouchableOpacity style={styles.button} onPress={() => router.push('/chat')} activeOpacity={0.7} >
-    //       <Text style={styles.buttonText}>Go to chat</Text>
-    //     </TouchableOpacity>
-    //   </View>
-    // </View>
   );
 }
 
